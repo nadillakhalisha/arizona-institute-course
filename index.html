@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Arizona Institute</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#F97316",
+              secondary: "#FACC15",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <!-- ===== HEADER ===== -->
+    <nav class="fixed w-full shadow z-50">
+      <div
+        class="max-w-7xl mx-auto flex justify-between items-center h-16 px-6"
+      >
+        <div class="flex items-center gap-2">
+          <img src="assets/img/logo.png" class="w-8 h-8" />
+          <span class="font-bold text-orange-500">Arizona Institute</span>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="information.html">Informations</a>
+
+          <a
+            href="#apply-now"
+            class="bg-gradient-to-r from-secondary to-primary text-white px-4 py-2 rounded font-semibold shadow"
+          >
+            Daftar
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="pt-28 pb-16 bg-white">
+      <div
+        class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center px-6"
+      >
+        <div>
+          <h1 class="text-5xl lg:text-6xl font-bold leading-tight group">
+            <span class="text-primary block"> Arizona </span>
+
+            <span class="text-secondary relative inline-block">
+              Institute
+              <span
+                class="absolute left-0 -bottom-2 w-0 h-1 bg-secondary rounded-full transition-all duration-700 group-hover:w-full"
+              ></span>
+            </span>
+          </h1>
+
+          <p
+            class="mt-6 text-gray-700 text-lg leading-relaxed max-w-2xl font-light"
+          >
+            Sebagai lembaga kursus Bahasa Inggris yang
+            <span class="font-semibold text-orange-500"
+              >terakreditasi dan terpercaya</span
+            >, Arizona Institute berkomitmen menghadirkan sistem pembelajaran
+            yang
+            <span class="font-medium"
+              >profesional, terstruktur, dan berorientasi pada hasil</span
+            >. Setiap program dirancang untuk membantu peserta didik
+            meningkatkan kemampuan berbahasa Inggris secara
+            <span class="italic">efektif, percaya diri, dan berkelanjutan</span
+            >, baik untuk kebutuhan akademik, profesional, maupun komunikasi
+            sehari-hari.
+          </p>
+        </div>
+
+        <div class="flex justify-center lg:justify-end">
+          <div
+            class="relative w-full max-w-md h-[360px] lg:h-[400px] rounded-2xl overflow-hidden shadow-xl lg:mr-10"
+          >
+            <img
+              id="heroSlider"
+              src="assets/img/hero1.jpg"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <div class="text-center mb-16">
+      <p class="text-sm tracking-widest text-gray-400 uppercase mb-2">
+        Who We Are
+      </p>
+      <h2 class="text-4xl font-bold text-orange-500">About Us</h2>
+      <div class="w-20 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+    </div>
+
+    <!-- HISTORY -->
+    <div class="relative grid md:grid-cols-2 gap-12 mb-20 items-center">
+      <!-- IMAGE -->
+      <div class="flex justify-center group">
+        <img
+          src="assets/img/history.jpg"
+          class="w-full max-w-xs h-64 object-cover rounded-2xl shadow-lg transform transition duration-500 group-hover:scale-105"
+          alt="Our History"
+        />
+      </div>
+
+      <!-- TEXT CARD -->
+      <div
+        class="bg-orange-500 text-white p-8 rounded-2xl shadow-lg max-w-sm mx-auto transition duration-500 hover:shadow-2xl hover:-translate-y-2"
+      >
+        <div class="flex items-center gap-3 mb-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-8 h-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 8c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3zM6 21v-2a6 6 0 0112 0v2"
+            />
+          </svg>
+          <h3 class="text-2xl font-bold">Our History</h3>
+        </div>
+
+        <p class="text-sm leading-relaxed">
+          Arizona Institute berdiri sejak 1993 sebagai lembaga kursus Bahasa
+          Inggris yang berkomitmen pada sistem pembelajaran terstruktur,
+          profesional, dan berorientasi pada hasil.
+        </p>
+      </div>
+
+      <!-- PANAH MELENGKUNG -->
+      <svg
+        class="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+        width="180"
+        height="120"
+        viewBox="0 0 180 120"
+        fill="none"
+      >
+        <path
+          d="M10 90 C 80 10, 100 10, 170 40"
+          stroke="#FB923C"
+          stroke-width="2"
+          stroke-dasharray="6 6"
+          fill="none"
+          marker-end="url(#arrowhead)"
+        />
+        <defs>
+          <marker
+            id="arrowhead"
+            markerWidth="10"
+            markerHeight="10"
+            refX="5"
+            refY="5"
+            orient="auto"
+          >
+            <path d="M0 0L10 5L0 10Z" fill="#FB923C" />
+          </marker>
+        </defs>
+      </svg>
+    </div>
+
+    <!-- IMPACT -->
+    <div class="relative grid md:grid-cols-2 gap-12 items-center">
+      <!-- TEXT CARD -->
+      <div
+        class="bg-orange-500 text-white p-8 rounded-2xl shadow-lg max-w-sm mx-auto text-center transition duration-500 hover:shadow-2xl hover:-translate-y-2"
+      >
+        <div class="flex justify-center items-center gap-3 mb-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-8 h-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13 10V3L4 14h7v7l9-11h-7z"
+            />
+          </svg>
+          <h3 class="text-2xl font-bold">Our Impact</h3>
+        </div>
+
+        <p class="text-sm leading-relaxed">
+          Alumni Arizona Institute telah memiliki kemampuan Bahasa Inggris yang
+          kompeten, percaya diri, dan siap bersaing di dunia akademik maupun
+          profesional.
+        </p>
+      </div>
+
+      <!-- IMAGE -->
+      <div class="flex justify-center group">
+        <img
+          src="assets/img/impact.jpg"
+          class="w-full max-w-xs h-64 object-cover rounded-2xl shadow-lg transform transition duration-500 group-hover:scale-105"
+          alt="Our Impact"
+        />
+      </div>
+
+      <!-- PANAH MELENGKUNG -->
+      <svg
+        class="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+        width="180"
+        height="120"
+        viewBox="0 0 180 120"
+        fill="none"
+      >
+        <path
+          d="M170 30 C 100 110, 80 110, 10 70"
+          stroke="#FB923C"
+          stroke-width="2"
+          stroke-dasharray="6 6"
+          fill="none"
+          marker-end="url(#arrowhead2)"
+        />
+        <defs>
+          <marker
+            id="arrowhead2"
+            markerWidth="10"
+            markerHeight="10"
+            refX="5"
+            refY="5"
+            orient="auto"
+          >
+            <path d="M0 0L10 5L0 10Z" fill="#FB923C" />
+          </marker>
+        </defs>
+      </svg>
+    </div>
+
+    <!-- ===== VIDEO ===== -->
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- TITLE -->
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-orange-500 mb-4">
+            Learning Atmosphere
+          </h2>
+          <p class="text-gray-600 max-w-xl mx-auto">
+            Gambaran suasana belajar interaktif dan profesional di Arizona
+            Institute
+          </p>
+        </div>
+
+        <!-- VIDEO GRID -->
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- VIDEO CARD 1 -->
+          <div
+            class="group relative rounded-3xl p-[2px] bg-gradient-to-br from-orange-400 to-orange-600 shadow-xl"
+          >
+            <div class="relative rounded-3xl overflow-hidden bg-black">
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                class="w-full h-72 object-cover transform transition duration-700 group-hover:scale-110"
+              >
+                <source src="assets/video/video1.mp4" type="video/mp4" />
+              </video>
+
+              <!-- OVERLAY -->
+              <div
+                class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500"
+              ></div>
+
+              <!-- LABEL -->
+              <div class="absolute bottom-4 left-4 text-white">
+                <h3 class="text-lg font-semibold">Interactive Class</h3>
+                <p class="text-sm text-white/80">
+                  Active & Communicative Learning
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- VIDEO CARD 2 -->
+          <div
+            class="group relative rounded-3xl p-[2px] bg-gradient-to-br from-orange-400 to-orange-600 shadow-xl"
+          >
+            <div class="relative rounded-3xl overflow-hidden bg-black">
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                class="w-full h-72 object-cover transform transition duration-700 group-hover:scale-110"
+              >
+                <source src="assets/video/video2.mp4" type="video/mp4" />
+              </video>
+
+              <!-- OVERLAY -->
+              <div
+                class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500"
+              ></div>
+
+              <!-- LABEL -->
+              <div class="absolute bottom-4 left-4 text-white">
+                <h3 class="text-lg font-semibold">Professional Environment</h3>
+                <p class="text-sm text-white/80">
+                  Comfortable & Focused Learning
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== APPLY NOW ===== -->
+    <section id="apply-now" class="py-20 bg-blue-900 text-white">
+      <div class="max-w-md mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-orange-500">
+          APPLY NOW!
+        </h2>
+
+        <!-- KOTAK ORANGE -->
+        <div class="mt-8 bg-orange-500 p-1 rounded-xl shadow-lg">
+          <form
+            id="applyForm"
+            class="bg-orange text-orange-800 p-6 rounded-lg space-y-4"
+          >
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              placeholder="Nama"
+              class="w-full border p-3 rounded"
+              required
+            />
+
+            <input
+              type="tel"
+              id="wa"
+              name="wa"
+              placeholder="WhatsApp"
+              class="w-full border p-3 rounded"
+              required
+            />
+
+            <select
+              id="program"
+              name="program"
+              class="w-full border p-3 rounded"
+              required
+            >
+              <option value="">Pilih Program</option>
+              <option>English for Children</option>
+              <option>Conversational English</option>
+              <option>TOEFL / IELTS</option>
+              <option>English for Specific Purpose</option>
+            </select>
+
+            <button
+              class="w-full bg-red-800 text-white py-3 rounded font-semibold"
+            >
+              Kirim
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HERO SLIDER ===== -->
+    <script>
+      const heroImages = [
+        "assets/img/hero1.jpg",
+        "assets/img/hero2.jpg",
+        "assets/img/hero3.jpg",
+      ];
+
+      let heroIndex = 0;
+      const heroImg = document.getElementById("heroSlider");
+
+      setInterval(() => {
+        heroImg.style.opacity = 0;
+        setTimeout(() => {
+          heroIndex = (heroIndex + 1) % heroImages.length;
+          heroImg.src = heroImages[heroIndex];
+          heroImg.style.opacity = 1;
+        }, 600);
+      }, 3500);
+    </script>
+
+    <!-- ===== WHATSAPP SCRIPT (FIX SAJA WA) ===== -->
+    <script>
+      document
+        .getElementById("applyForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          let nama = document.getElementById("nama").value;
+          let wa = document.getElementById("wa").value;
+          let program = document.getElementById("program").value;
+
+          wa = wa.replace(/[^0-9]/g, "");
+          if (wa.startsWith("08")) wa = "62" + wa.slice(1);
+
+          const adminWA = "6281360044600";
+
+          const pesan = `Halo Arizona Institute 👋
+Saya ingin mendaftar.
+
+Nama: ${nama}
+WhatsApp: ${wa}
+Program: ${program}`;
+
+          window.open(
+            "https://wa.me/" + adminWA + "?text=" + encodeURIComponent(pesan),
+            "_blank"
+          );
+        });
+    </script>
+  </body>
+</html>
