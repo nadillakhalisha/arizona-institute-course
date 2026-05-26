@@ -28,7 +28,7 @@
 
   <body>
     <!-- ===== HEADER ===== -->
-    <nav class="fixed w-full shadow z-50">
+    <nav class="fixed w-full shadow z-50 bg-white">
       <div
         class="max-w-7xl mx-auto flex justify-between items-center h-16 px-6"
       >
@@ -41,7 +41,8 @@
           <span class="font-bold text-orange-500">Arizona Institute</span>
         </div>
 
-        <div class="flex items-center gap-7">
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-7">
           <a href="index.html">Home</a>
           <a href="gallery.html">Gallery</a>
           <a href="information.html">Informations</a>
@@ -66,7 +67,6 @@
               <circle cx="17.5" cy="6.5" r="1.2" />
             </svg>
           </a>
-
           <a
             href="#apply-now"
             class="bg-gradient-to-r from-secondary to-primary text-white px-4 py-2 rounded font-semibold shadow"
@@ -74,8 +74,96 @@
             Daftar
           </a>
         </div>
+
+        <!-- Hamburger Button (Mobile) -->
+        <button
+          id="hamburgerBtn"
+          class="md:hidden flex flex-col justify-center items-center gap-1.5 w-10 h-10"
+          aria-label="Toggle menu"
+        >
+          <span
+            id="bar1"
+            class="block w-6 h-0.5 bg-orange-500 rounded transition-all duration-300"
+          ></span>
+          <span
+            id="bar2"
+            class="block w-6 h-0.5 bg-orange-500 rounded transition-all duration-300"
+          ></span>
+          <span
+            id="bar3"
+            class="block w-6 h-0.5 bg-orange-500 rounded transition-all duration-300"
+          ></span>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div
+        id="mobileMenu"
+        class="md:hidden hidden flex-col bg-white border-t border-orange-100 px-6 py-4 gap-4 shadow-lg"
+      >
+        <a
+          href="index.html"
+          class="text-gray-700 font-medium py-2 border-b border-orange-50"
+          >Home</a
+        >
+        <a
+          href="gallery.html"
+          class="text-gray-700 font-medium py-2 border-b border-orange-50"
+          >Gallery</a
+        >
+        <a
+          href="information.html"
+          class="text-gray-700 font-medium py-2 border-b border-orange-50"
+          >Informations</a
+        >
+        <a
+          href="https://www.instagram.com/arizonainstitute/"
+          target="_blank"
+          class="text-orange-500 font-medium py-2 border-b border-orange-50 flex items-center gap-2"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5z"
+            />
+            <path
+              d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5A3.5 3.5 0 1112 15a3.5 3.5 0 010-7z"
+            />
+            <circle cx="17.5" cy="6.5" r="1.2" />
+          </svg>
+          Instagram
+        </a>
+        <a
+          href="#apply-now"
+          class="bg-gradient-to-r from-secondary to-primary text-white px-4 py-3 rounded font-semibold shadow text-center mt-1"
+        >
+          Daftar
+        </a>
       </div>
     </nav>
+
+    <script>
+      const btn = document.getElementById("hamburgerBtn");
+      const menu = document.getElementById("mobileMenu");
+      const bar1 = document.getElementById("bar1");
+      const bar2 = document.getElementById("bar2");
+      const bar3 = document.getElementById("bar3");
+      let open = false;
+      btn.addEventListener("click", () => {
+        open = !open;
+        menu.classList.toggle("hidden", !open);
+        menu.classList.toggle("flex", open);
+        bar1.style.transform = open ? "rotate(45deg) translate(5px, 5px)" : "";
+        bar2.style.opacity = open ? "0" : "1";
+        bar3.style.transform = open
+          ? "rotate(-45deg) translate(5px, -5px)"
+          : "";
+      });
+    </script>
 
     <!-- ===== HERO ===== -->
     <section class="pt-36 pb-20 bg-white">
