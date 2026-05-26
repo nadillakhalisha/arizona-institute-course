@@ -1,332 +1,285 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Gallery | Arizona Institute</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <title>Gallery | Arizona Institute</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Galeri dokumentasi kegiatan pembelajaran di Arizona Institute" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-  <body>
-    <!-- NAVBAR -->
-    <nav class="bg-white shadow p-4 sticky top-0 z-50">
-      <div class="max-w-7xl mx-auto flex items-center justify-between">
-        <a href="index.html" class="text-orange-500 font-semibold">⬅ Home</a>
-        <span class="font-bold text-gray-800">Gallery</span>
-      </div>
-    </nav>
+<body class="bg-white">
 
-    <!-- GALLERY -->
-    <section class="max-w-6xl mx-auto py-20 px-6">
-      <div class="flex justify-center mb-14">
-        <div class="text-center group">
-          <!-- ICON -->
-          <div
-            class="mx-auto mb-3 w-12 h-12 flex items-center justify-center rounded-full bg-orange-100 text-orange-500 transition duration-500 group-hover:scale-110"
-          >
-            📸
-          </div>
+<!-- NAVBAR -->
+<nav class="bg-white shadow p-4 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <a href="index.html" class="text-orange-500 font-semibold">⬅ Home</a>
+    <span class="font-bold text-gray-800">Gallery</span>
+  </div>
+</nav>
 
-          <!-- TITLE -->
-          <h2
-       class="text-3xl md:text-4xl font-extrabold text-orange-500 relative inline-block group"
-          >
-       Gallery Activities
-       <span
-       class="absolute left-1/2 -bottom-2 w-0 h-1 bg-orange-500 rounded-full transition-all duration-500 group-hover:w-full group-hover:left-0"
-  ></span>
-      </h2>
+<!-- HEADER -->
+<section class="max-w-6xl mx-auto py-20 px-6 text-center">
+  <div class="mx-auto mb-3 w-12 h-12 flex items-center justify-center rounded-full bg-orange-100 text-orange-500">📸</div>
+  <h2 class="text-3xl md:text-4xl font-extrabold text-orange-500">Gallery Activities</h2>
+  <p class="mt-4 text-sm text-gray-500 max-w-md mx-auto">
+    Dokumentasi kegiatan pembelajaran dan suasana kelas di Arizona Institute
+  </p>
+</section>
 
-
-          <!-- SUBTITLE -->
-          <p class="mt-4 text-sm text-gray-500 max-w-md mx-auto">
-            Dokumentasi kegiatan pembelajaran dan suasana kelas di Arizona
-            Institute
-          </p>
-        </div>
-      </div>
-
-      <!-- ===== GALLERY ===== -->
-<section class="py-20 bg-white">
+<!-- GALLERY -->
+<section class="pb-28">
   <div class="max-w-7xl mx-auto px-6">
 
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
 
-      <!-- G1 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g1.JPG"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Learning Activity</span>
-        </div>
-      </div>
+<!-- G1 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden
+            transition-all duration-300 ease-out
+            hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g1.JPG" alt="Learning Activity" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Learning Activity</span>
+  </div>
+</div>
 
-      <!-- G2 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g2.jpg"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Class Session</span>
-        </div>
-      </div>
+<!-- G2 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g2.jpg" alt="Class Session" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Arizona Exhibition</span>
+  </div>
+</div>
 
-      <!-- G3 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g3.JPG"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Student Activity</span>
-        </div>
-      </div>
+<!-- G3 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g3.JPG" alt="Student Activity" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Student Activity</span>
+  </div>
+</div>
 
-      <!-- G4 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g4.JPG"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">English Practice</span>
-        </div>
-      </div>
+<!-- G4 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g4.JPG" alt="English Practice" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">English Practice</span>
+  </div>
+</div>
 
-      <!-- G5 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g5.jpg"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Learning Moment</span>
-        </div>
-      </div>
+<!-- G5 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g5.jpg" alt="Learning Moment" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Toefl Training</span>
+  </div>
+</div>
 
-      <!-- G6 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g6.JPG"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Discussion Class</span>
-        </div>
-      </div>
+<!-- G6 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g6.JPG" alt="Discussion Class" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Teacher training</span>
+  </div>
+</div>
 
-      <!-- G7 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g7.JPG"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Group Learning</span>
-        </div>
-      </div>
+<!-- G7 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g7.JPG" alt="Group Learning" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Group Learning</span>
+  </div>
+</div>
 
-      <!-- G8 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g8.JPG"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Classroom Vibes</span>
-        </div>
-      </div>
+<!-- G8 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g8.JPG" alt="Classroom Vibes" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Classroom Vibes</span>
+  </div>
+</div>
 
-      <!-- G9 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g9.JPG"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Active Learning</span>
-        </div>
-      </div>
+<!-- G9 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g9.JPG" alt="Active Learning" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Active Learning</span>
+  </div>
+</div>
 
-      <!-- G10 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g10.JPG"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Speaking Practice</span>
-        </div>
-      </div>
+<!-- G10 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g10.JPG" alt="Speaking Practice" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Speaking Practice</span>
+  </div>
+</div>
 
-      <!-- G11 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g11.jpg"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Class Activity</span>
-        </div>
-      </div>
+<!-- G11 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g11.jpg" alt="Class Activity" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Arizona Institute Exhibition</span>
+  </div>
+</div>
 
-      <!-- G12 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g12.jpg"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Learning Together</span>
-        </div>
-      </div>
+<!-- G12 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g12.jpg" alt="Learning Together" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Debate Competition</span>
+  </div>
+</div>
 
-      <!-- G13 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g13.jpg"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">English Class</span>
-        </div>
-      </div>
+<!-- G13 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g13.jpg" alt="English Class" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Arizona Institute Exhibition</span>
+  </div>
+</div>
 
-      <!-- G14 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g14.jpg"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Study Session</span>
-        </div>
-      </div>
+<!-- G14 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g14.jpg" alt="Study Session" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Arizona Institute Exhibition</span>
+  </div>
+</div>
 
-      <!-- G15 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g15.jpg"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Learning Atmosphere</span>
-        </div>
-      </div>
+<!-- G15 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g15.jpg" alt="Learning Atmosphere" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Learning Atmosphere</span>
+  </div>
+</div>
 
-      <!-- G16 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g16.jpg"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Interactive Class</span>
-        </div>
-      </div>
+<!-- G16 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g16.jpg" alt="Interactive Class" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Interactive Class</span>
+  </div>
+</div>
 
-      <!-- G17 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g17.jpg"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Group Discussion</span>
-        </div>
-      </div>
+<!-- G17 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g17.jpg" alt="Group Discussion" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Group Discussion</span>
+  </div>
+</div>
 
-      <!-- G18 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g18.JPG"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Study Activity</span>
-        </div>
-      </div>
+<!-- G18 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g18.JPG" alt="Study Activity" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Study Activity</span>
+  </div>
+</div>
 
-      <!-- G19 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g19.jpg"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Learning Process</span>
-        </div>
-      </div>
+<!-- G19 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g19.jpg" alt="Learning Process" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Debate Competition</span>
+  </div>
+</div>
 
-      <!-- G20 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g20.jpg"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Class Interaction</span>
-        </div>
-      </div>
+<!-- G20 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g20.jpg" alt="Class Interaction" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Class Interaction</span>
+  </div>
+</div>
 
-      <!-- G21 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g21.JPG"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">English Learning</span>
-        </div>
-      </div>
+<!-- G21 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g21.JPG" alt="English Learning" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">English Learning</span>
+  </div>
+</div>
 
-      <!-- G22 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g22.JPG"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Study Environment</span>
-        </div>
-      </div>
+<!-- G22 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g22.JPG" alt="Study Environment" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Study Environment</span>
+  </div>
+</div>
 
-      <!-- G23 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g23.JPG"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Learning Session</span>
-        </div>
-      </div>
+<!-- G23 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g23.JPG" alt="Learning Session" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Learning Session</span>
+  </div>
+</div>
 
-      <!-- G24 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g24.JPG"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Class Experience</span>
-        </div>
-      </div>
+<!-- G24 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g24.JPG" alt="Class Experience" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Class Experience</span>
+  </div>
+</div>
 
-      <!-- G25 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g25.JPG"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Learning Culture</span>
-        </div>
-      </div>
+<!-- G25 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g25.JPG" alt="Learning Culture" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Learning Culture</span>
+  </div>
+</div>
 
-      <!-- G26 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g26.JPG"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Student Engagement</span>
-        </div>
-      </div>
+<!-- G26 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g26.JPG" alt="Student Engagement" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Student Engagement</span>
+  </div>
+</div>
 
-      <!-- G27 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g27.JPG"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Class Dynamics</span>
-        </div>
-      </div>
+<!-- G27 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g27.JPG" alt="Class Dynamics" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Class Dynamics</span>
+  </div>
+</div>
 
-      <!-- G28 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g28.JPG"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Learning Activity</span>
-        </div>
-      </div>
+<!-- G28 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g28.JPG" alt="Learning Activity" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Learning Activity</span>
+  </div>
+</div>
 
-      <!-- G29 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g29.JPG"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">English Program</span>
-        </div>
-      </div>
+<!-- G29 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g29.JPG" alt="English Program" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">English Program</span>
+  </div>
+</div>
 
-      <!-- G30 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-md">
-        <img src="assets/img/gallery/g30.JPG"
-          class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <span class="text-white text-sm font-semibold">Arizona Institute</span>
-        </div>
-      </div>
+<!-- G30 -->
+<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
+  <img src="assets/img/gallery/g30.JPG" alt="Arizona Institute" class="w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+    <span class="text-white text-sm font-semibold">Arizona Institute</span>
+  </div>
+</div>
 
     </div>
   </div>
 </section>
 
-
+</body>
 </html>
