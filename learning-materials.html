@@ -1,0 +1,1127 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Learning Materials | Arizona Institute</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Materi pembelajaran Bahasa Inggris Arizona Institute"
+    />
+
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Learning Materials | Arizona Institute"
+    />
+    <meta
+      property="og:description"
+      content="Materi pembelajaran Bahasa Inggris yang digunakan di Arizona Institute."
+    />
+    <meta property="og:image" content="assets/img/logo.png" />
+    <meta property="og:type" content="website" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#F97316",
+              secondary: "#FACC15",
+            },
+            fontFamily: {
+              display: ["Sora", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="font-body bg-white">
+    <!-- ===== HEADER (sama dengan halaman lain) ===== -->
+    <nav
+      class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-orange-100/70"
+    >
+      <div
+        class="max-w-7xl mx-auto flex justify-between items-center h-16 px-6"
+      >
+        <div class="flex items-center gap-2">
+          <img
+            src="assets/img/logo.png"
+            class="w-8 h-8"
+            alt="Arizona Institute Logo"
+          />
+          <span class="font-display font-bold text-orange-500 tracking-tight"
+            >Arizona Institute</span
+          >
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-3">
+          <div
+            class="flex items-center gap-1 bg-orange-50/70 rounded-full p-1.5"
+          >
+            <a
+              href="index.html"
+              class="px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-orange-600 hover:bg-white/70 transition-all duration-300"
+            >
+              Home
+            </a>
+            <a
+              href="gallery.html"
+              class="px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-orange-600 hover:bg-white/70 transition-all duration-300"
+            >
+              Gallery
+            </a>
+            <a
+              href="learning-materials.html"
+              class="px-4 py-2 rounded-full text-sm font-semibold bg-white text-orange-600 shadow-sm transition-all duration-300"
+            >
+              Learning Materials
+            </a>
+            <a
+              href="information.html"
+              class="px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-orange-600 hover:bg-white/70 transition-all duration-300"
+            >
+              Information
+            </a>
+          </div>
+
+          <a
+            href="https://www.instagram.com/arizonainstitute/"
+            target="_blank"
+            aria-label="Instagram"
+            class="w-9 h-9 flex items-center justify-center rounded-full text-orange-500 hover:bg-orange-50 hover:text-orange-600 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5z"
+              />
+              <path
+                d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5A3.5 3.5 0 1112 15a3.5 3.5 0 010-7z"
+              />
+              <circle cx="17.5" cy="6.5" r="1.2" />
+            </svg>
+          </a>
+
+          <a
+            href="index.html#apply-now"
+            class="bg-gradient-to-r from-secondary to-primary text-white text-sm px-5 py-2.5 rounded-full font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+          >
+            Daftar
+          </a>
+        </div>
+
+        <!-- Hamburger Button (Mobile) -->
+        <button
+          id="hamburgerBtn"
+          class="md:hidden flex flex-col justify-center items-center gap-1.5 w-10 h-10"
+          aria-label="Toggle menu"
+        >
+          <span
+            id="bar1"
+            class="block w-6 h-0.5 bg-orange-500 rounded transition-all duration-300"
+          ></span>
+          <span
+            id="bar2"
+            class="block w-6 h-0.5 bg-orange-500 rounded transition-all duration-300"
+          ></span>
+          <span
+            id="bar3"
+            class="block w-6 h-0.5 bg-orange-500 rounded transition-all duration-300"
+          ></span>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div
+        id="mobileMenu"
+        class="md:hidden hidden flex-col bg-white border-t border-orange-100 px-4 py-4 gap-1.5 shadow-lg"
+      >
+        <a
+          href="index.html"
+          class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-slate-700 font-medium hover:bg-orange-50/70 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-4.5 h-4.5 w-[18px] h-[18px]"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+            />
+          </svg>
+          Home
+        </a>
+        <a
+          href="gallery.html"
+          class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-slate-700 font-medium hover:bg-orange-50/70 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-[18px] h-[18px]"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14M4 6h16M4 6a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V8a2 2 0 00-2-2M4 6a2 2 0 012-2h12a2 2 0 012 2"
+            />
+          </svg>
+          Gallery
+        </a>
+        <a
+          href="learning-materials.html"
+          class="flex items-center gap-3 px-3.5 py-3 rounded-xl bg-orange-50 text-orange-600 font-semibold transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-[18px] h-[18px]"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+            />
+          </svg>
+          Learning Materials
+        </a>
+        <a
+          href="information.html"
+          class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-slate-700 font-medium hover:bg-orange-50/70 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-[18px] h-[18px]"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          Information
+        </a>
+        <a
+          href="https://www.instagram.com/arizonainstitute/"
+          target="_blank"
+          class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-orange-500 font-medium hover:bg-orange-50/70 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-[18px] h-[18px]"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 12m-3.5 0a3.5 3.5 0 117 0 3.5 3.5 0 01-7 0M17.5 6.5h.01M4 8a4 4 0 014-4h8a4 4 0 014 4v8a4 4 0 01-4 4H8a4 4 0 01-4-4V8z"
+            />
+          </svg>
+          Instagram
+        </a>
+        <a
+          href="index.html#apply-now"
+          class="bg-gradient-to-r from-secondary to-primary text-white px-4 py-3 rounded-full font-semibold shadow text-center mt-1.5"
+        >
+          Daftar
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- BACK TO HOME -->
+      <div class="max-w-7xl mx-auto px-6 pt-20">
+        <a
+          href="index.html"
+          class="inline-flex items-center gap-1.5 text-sm font-semibold text-orange-500 hover:text-orange-600 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            />
+          </svg>
+          Kembali ke Beranda
+        </a>
+      </div>
+
+      <!-- HEADER -->
+      <section
+        class="relative bg-gradient-to-b from-orange-50/70 via-white to-white pt-6 pb-14 px-6 overflow-hidden"
+      >
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+          <div
+            class="absolute top-0 -right-20 w-72 h-72 bg-secondary/20 rounded-full blur-3xl"
+          ></div>
+          <div
+            class="absolute bottom-0 -left-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl"
+          ></div>
+        </div>
+
+        <div class="relative max-w-6xl mx-auto text-center">
+          <div
+            class="mx-auto mb-4 w-14 h-14 flex items-center justify-center rounded-2xl bg-gradient-to-br from-secondary to-primary text-white text-2xl shadow-md"
+          >
+            📚
+          </div>
+          <h1
+            class="text-3xl md:text-5xl font-display font-extrabold text-slate-900"
+          >
+            Learning <span class="text-orange-500">Materials</span>
+          </h1>
+          <div
+            class="w-20 h-1 bg-orange-500 mx-auto mt-4 mb-5 rounded-full"
+          ></div>
+          <p class="text-sm md:text-base text-gray-500 max-w-xl mx-auto">
+            Arizona Institute menggunakan buku dan materi pembelajaran yang
+            telah diakui secara internasional, disesuaikan dengan kebutuhan
+            akademik maupun dunia kerja.
+          </p>
+        </div>
+      </section>
+
+      <!-- MATERIALS -->
+      <div class="pb-28">
+        <section class="max-w-7xl mx-auto px-6 mb-16">
+          <div class="flex items-center gap-3 mb-6">
+            <div
+              class="w-1.5 h-7 rounded-full bg-gradient-to-b from-secondary to-primary"
+            ></div>
+            <h2
+              class="text-xl sm:text-2xl font-display font-bold text-slate-800"
+            >
+              Hospitality &amp; Business English
+            </h2>
+          </div>
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6"
+          >
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/English for Aviation.png"
+                  alt="English for Aviation"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  English for Aviation
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Bahasa Inggris untuk dunia penerbangan, mencakup istilah dan
+                  komunikasi seputar bandara serta operasional pesawat.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/English for Cabin Crew.png"
+                  alt="English for Cabin Crew"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  English for Cabin Crew
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Komunikasi dan pelayanan penumpang untuk calon pramugari dan
+                  pramugara.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/English for Hotel and cartering.png"
+                  alt="English for Hotel &amp; Catering"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  English for Hotel &amp; Catering
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Bahasa Inggris untuk perhotelan dan jasa boga, dari check-in
+                  tamu hingga pelayanan restoran.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/English for Custemer care.png"
+                  alt="English for Customer Care"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  English for Customer Care
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Melatih pelayanan pelanggan, menangani keluhan, dan komunikasi
+                  yang ramah dalam bahasa Inggris.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/English for Meeting.png"
+                  alt="English for Meeting"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  English for Meeting
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Bahasa Inggris untuk rapat, diskusi, dan negosiasi bisnis
+                  secara profesional.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/English for Preesentation.png"
+                  alt="English for Presentation"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  English for Presentation
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Melatih kemampuan presentasi dan public speaking dalam bahasa
+                  Inggris di lingkungan kerja.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/English for Scretarial.png"
+                  alt="English for Secretarial"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  English for Secretarial
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Bahasa Inggris untuk tugas kesekretariatan, surat-menyurat,
+                  dan administrasi kantor.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/English for Job- Hunting.png"
+                  alt="English for Job Hunting"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  English for Job Hunting
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Persiapan melamar kerja: menulis CV, surat lamaran, dan
+                  wawancara kerja dalam bahasa Inggris.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-6 mb-16">
+          <div class="flex items-center gap-3 mb-6">
+            <div
+              class="w-1.5 h-7 rounded-full bg-gradient-to-b from-secondary to-primary"
+            ></div>
+            <h2
+              class="text-xl sm:text-2xl font-display font-bold text-slate-800"
+            >
+              Medical English
+            </h2>
+          </div>
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6"
+          >
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/English for Medical.png"
+                  alt="English for Medical"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  English for Medical
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Istilah dan komunikasi bahasa Inggris umum di bidang medis dan
+                  layanan kesehatan.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/English for Nursing.png"
+                  alt="English for Nursing"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  English for Nursing
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Untuk tenaga keperawatan: komunikasi dengan pasien dan
+                  prosedur perawatan sehari-hari.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/English for Phasmacist.png"
+                  alt="English for Pharmacist"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  English for Pharmacist
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Untuk apoteker: istilah farmasi, obat-obatan, dan komunikasi
+                  dengan pasien di apotek.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-6 mb-16">
+          <div class="flex items-center gap-3 mb-6">
+            <div
+              class="w-1.5 h-7 rounded-full bg-gradient-to-b from-secondary to-primary"
+            ></div>
+            <h2
+              class="text-xl sm:text-2xl font-display font-bold text-slate-800"
+            >
+              Engineering &amp; Technical English
+            </h2>
+          </div>
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6"
+          >
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/English for Engineering.png"
+                  alt="English for Engineering"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  English for Engineering
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Istilah dan komunikasi bahasa Inggris untuk bidang teknik dan
+                  rekayasa.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/English for Mechanics.png"
+                  alt="English for Mechanics"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  English for Mechanics
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Untuk montir dan mekanik: istilah perbaikan mesin dan
+                  peralatan teknis.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/English for Agricultural.png"
+                  alt="English for Agricultural"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  English for Agricultural
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Bahasa Inggris untuk bidang pertanian dan pengelolaan hasil
+                  bumi.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/English for Trsnsport &amp; Logistics.png"
+                  alt="English for Transport &amp; Logistics"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  English for Transport &amp; Logistics
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Untuk bidang transportasi dan logistik: pengiriman,
+                  pergudangan, dan rantai pasok.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/English for Taxi Driver.png"
+                  alt="English for Taxi Driver"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  English for Taxi Driver
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Untuk sopir taksi: percakapan dasar dengan penumpang dan arah
+                  lokasi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-6 mb-16">
+          <div class="flex items-center gap-3 mb-6">
+            <div
+              class="w-1.5 h-7 rounded-full bg-gradient-to-b from-secondary to-primary"
+            ></div>
+            <h2
+              class="text-xl sm:text-2xl font-display font-bold text-slate-800"
+            >
+              Public Service English
+            </h2>
+          </div>
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6"
+          >
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/English for Police.png"
+                  alt="English for Police"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  English for Police
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Untuk petugas kepolisian: komunikasi tugas dan pelayanan
+                  masyarakat dalam bahasa Inggris.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-6 mb-16">
+          <div class="flex items-center gap-3 mb-6">
+            <div
+              class="w-1.5 h-7 rounded-full bg-gradient-to-b from-secondary to-primary"
+            ></div>
+            <h2
+              class="text-xl sm:text-2xl font-display font-bold text-slate-800"
+            >
+              TOEFL / TOEIC Preparation
+            </h2>
+          </div>
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6"
+          >
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/TOEFL Longman.png"
+                  alt="TOEFL Longman"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  TOEFL Longman
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Buku persiapan tes TOEFL terbitan Longman, lengkap dengan
+                  latihan soal.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/TOEFL PBT.png"
+                  alt="TOEFL PBT"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  TOEFL PBT
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Persiapan khusus untuk format TOEFL Paper-Based Test (PBT).
+                </p>
+              </div>
+            </div>
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/TOEIC  Preparation.png"
+                  alt="TOEIC Preparation"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  TOEIC Preparation
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Materi persiapan menyeluruh untuk menghadapi tes TOEIC.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/Tactics for TOEIC.png"
+                  alt="Tactics for TOEIC"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  Tactics for TOEIC
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Strategi dan trik jitu untuk menjawab soal-soal TOEIC lebih
+                  cepat dan tepat.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/Praparation Course fo TOEIC.png"
+                  alt="Preparation Course to TOEIC"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  Preparation Course to TOEIC
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Kursus terstruktur untuk membangun kesiapan menghadapi tes
+                  TOEIC dari dasar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-6 mb-16">
+          <div class="flex items-center gap-3 mb-6">
+            <div
+              class="w-1.5 h-7 rounded-full bg-gradient-to-b from-secondary to-primary"
+            ></div>
+            <h2
+              class="text-xl sm:text-2xl font-display font-bold text-slate-800"
+            >
+              General English
+            </h2>
+          </div>
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6"
+          >
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/Let's Talk 1.png"
+                  alt="Let's Talk 1"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  Let's Talk 1
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Percakapan bahasa Inggris sehari-hari untuk tingkat dasar.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/Let's Talk 2.png"
+                  alt="Let's Talk 2"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  Let's Talk 2
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Lanjutan percakapan bahasa Inggris untuk tingkat menengah.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-6 mb-16">
+          <div class="flex items-center gap-3 mb-6">
+            <div
+              class="w-1.5 h-7 rounded-full bg-gradient-to-b from-secondary to-primary"
+            ></div>
+            <h2
+              class="text-xl sm:text-2xl font-display font-bold text-slate-800"
+            >
+              Lainnya
+            </h2>
+          </div>
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6"
+          >
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/English for Beauty Saloon.png"
+                  alt="English for Beauty Saloon"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  English for Beauty Saloon
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Bahasa Inggris untuk salon kecantikan: melayani pelanggan dan
+                  istilah perawatan.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/English for Football.png"
+                  alt="English for Football"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  English for Football
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Kosakata dan istilah bahasa Inggris seputar dunia sepak bola.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group bg-white rounded-2xl shadow-md border border-orange-100/60 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="aspect-[4/5] w-full overflow-hidden bg-orange-50">
+                <img
+                  src="assets/img/learning material/English for Touris.png"
+                  alt="English for Tourism"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="text-sm sm:text-base font-semibold text-slate-800 leading-snug"
+                >
+                  English for Tourism
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-500 mt-1">
+                  Bahasa Inggris untuk sektor pariwisata: memandu wisatawan dan
+                  memberi informasi destinasi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ===== FOOTER (sama dengan halaman lain) ===== -->
+    <footer class="bg-slate-900 text-slate-300 py-10">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-3 items-center gap-4"
+      >
+        <div class="flex items-center gap-2 justify-center sm:justify-start">
+          <img
+            src="assets/img/logo.png"
+            class="w-7 h-7"
+            alt="Arizona Institute Logo"
+          />
+          <span class="font-display font-bold text-white"
+            >Arizona Institute</span
+          >
+        </div>
+
+        <p class="text-sm text-slate-400 text-center justify-self-center">
+          &copy; <span id="year"></span> Arizona Institute. All rights reserved.
+        </p>
+
+        <a
+          href="https://www.instagram.com/arizonainstitute/"
+          target="_blank"
+          aria-label="Instagram"
+          class="text-orange-400 hover:text-orange-300 transition justify-self-center sm:justify-self-end"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5z"
+            />
+            <path
+              d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5A3.5 3.5 0 1112 15a3.5 3.5 0 010-7z"
+            />
+            <circle cx="17.5" cy="6.5" r="1.2" />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

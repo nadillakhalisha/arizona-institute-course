@@ -1,0 +1,47 @@
+:root {
+  --primary: #f59e0b;
+  --secondary: #ea580c;
+  --cream: #fff8e7;
+}
+
+html,
+body {
+  background-color: var(--cream);
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+/* NOTE: section tidak lagi dipaksa transparent.
+   Biarkan Tailwind (bg-blue-900, bg-[#f97316], bg-white, dst)
+   yang menentukan warna tiap section. */
+
+section h2 {
+  margin-bottom: 2.5rem;
+}
+
+section p {
+  margin-bottom: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* NOTE: padding-left/right dihapus dari sini supaya tidak bentrok
+   dengan class px-* Tailwind (px-3, px-5, px-6, dst) yang dipakai
+   di tiap section. Cukup pastikan lebar 100% saja. */
+.max-w-7xl,
+.max-w-6xl,
+.max-w-4xl,
+.max-w-2xl,
+.max-w-xl {
+  width: 100%;
+}

@@ -1,0 +1,112 @@
+/* TABLET & MOBILE - 768px ke bawah */
+@media (max-width: 768px) {
+  body > section:first-of-type,
+  section.pt-36 {
+    padding-top: 4.5rem !important;
+  }
+
+  nav .max-w-7xl {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  nav .flex.items-center.gap-8 {
+    gap: 0.25rem !important;
+    flex-wrap: nowrap !important;
+  }
+
+  nav .flex.items-center.gap-2 img {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
+
+  nav .font-bold {
+    font-size: 0.75rem !important;
+  }
+
+  nav a {
+    font-size: 0.7rem !important;
+    padding: 0.25rem !important;
+  }
+
+  nav svg {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+  }
+
+  nav a.bg-gradient-to-r {
+    padding: 0.375rem 0.5rem !important;
+    font-size: 0.7rem !important;
+  }
+
+  nav {
+    height: 4rem !important;
+  }
+
+  nav .h-16 {
+    height: 4rem !important;
+  }
+
+  section h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.2;
+  }
+
+  section p.lg\:text-lg {
+    font-size: 1rem !important;
+    text-align: center !important;
+  }
+
+  #apply-now .text-3xl {
+    font-size: 1.875rem !important;
+  }
+
+  #applyForm {
+    padding: 1.5rem !important;
+  }
+
+  table {
+    font-size: 0.875rem !important;
+  }
+
+  table th,
+  table td {
+    padding: 0.75rem !important;
+  }
+}
+
+/* MOBILE SMALL - 640px ke bawah */
+@media (max-width: 640px) {
+  section h1 {
+    font-size: 2rem !important;
+  }
+
+  table .hidden.sm\:table-cell {
+    display: none !important;
+  }
+
+  nav .flex.items-center.gap-8 {
+    gap: 0.5rem;
+  }
+
+  nav a.bg-gradient-to-r {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .gallery-item img {
+    height: 120px;
+  }
+
+  .overflow-x-auto {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    min-width: 100%;
+  }
+}

@@ -1,285 +1,969 @@
 <!doctype html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <title>Gallery | Arizona Institute</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Galeri dokumentasi kegiatan pembelajaran di Arizona Institute" />
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gallery | Arizona Institute</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Galeri dokumentasi kegiatan pembelajaran di Arizona Institute"
+    />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
 
-<body class="bg-white">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gallery | Arizona Institute" />
+    <meta
+      property="og:description"
+      content="Dokumentasi kegiatan pembelajaran dan suasana kelas di Arizona Institute."
+    />
+    <meta property="og:image" content="assets/img/logo.png" />
+    <meta property="og:type" content="website" />
 
-<!-- NAVBAR -->
-<nav class="bg-white shadow p-4 sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto flex items-center justify-between">
-    <a href="index.html" class="text-orange-500 font-semibold">⬅ Home</a>
-    <span class="font-bold text-gray-800">Gallery</span>
-  </div>
-</nav>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 
-<!-- HEADER -->
-<section class="max-w-6xl mx-auto py-20 px-6 text-center">
-  <div class="mx-auto mb-3 w-12 h-12 flex items-center justify-center rounded-full bg-orange-100 text-orange-500">📸</div>
-  <h2 class="text-3xl md:text-4xl font-extrabold text-orange-500">Gallery Activities</h2>
-  <p class="mt-4 text-sm text-gray-500 max-w-md mx-auto">
-    Dokumentasi kegiatan pembelajaran dan suasana kelas di Arizona Institute
-  </p>
-</section>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- GALLERY -->
-<section class="pb-28">
-  <div class="max-w-7xl mx-auto px-6">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#F97316",
+              secondary: "#FACC15",
+            },
+            fontFamily: {
+              display: ["Sora", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
 
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+  <body class="font-body bg-white">
+    <!-- ===== HEADER (sama dengan index.html) ===== -->
+    <nav
+      class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-orange-100/70"
+    >
+      <div
+        class="max-w-7xl mx-auto flex justify-between items-center h-16 px-6"
+      >
+        <div class="flex items-center gap-2">
+          <img
+            src="assets/img/logo.png"
+            class="w-8 h-8"
+            alt="Arizona Institute Logo"
+          />
+          <span class="font-display font-bold text-orange-500 tracking-tight"
+            >Arizona Institute</span
+          >
+        </div>
 
-<!-- G1 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden
-            transition-all duration-300 ease-out
-            hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g1.JPG" alt="Learning Activity" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Learning Activity</span>
-  </div>
-</div>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-3">
+          <div
+            class="flex items-center gap-1 bg-orange-50/70 rounded-full p-1.5"
+          >
+            <a
+              href="index.html"
+              class="px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-orange-600 hover:bg-white/70 transition-all duration-300"
+            >
+              Home
+            </a>
+            <a
+              href="gallery.html"
+              class="px-4 py-2 rounded-full text-sm font-semibold bg-white text-orange-600 shadow-sm transition-all duration-300"
+            >
+              Gallery
+            </a>
+            <a
+              href="learning-materials.html"
+              class="px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-orange-600 hover:bg-white/70 transition-all duration-300"
+            >
+              Learning Materials
+            </a>
+            <a
+              href="information.html"
+              class="px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-orange-600 hover:bg-white/70 transition-all duration-300"
+            >
+              Information
+            </a>
+          </div>
 
-<!-- G2 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g2.jpg" alt="Class Session" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Arizona Exhibition</span>
-  </div>
-</div>
+          <a
+            href="https://www.instagram.com/arizonainstitute/"
+            target="_blank"
+            aria-label="Instagram"
+            class="w-9 h-9 flex items-center justify-center rounded-full text-orange-500 hover:bg-orange-50 hover:text-orange-600 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5z"
+              />
+              <path
+                d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5A3.5 3.5 0 1112 15a3.5 3.5 0 010-7z"
+              />
+              <circle cx="17.5" cy="6.5" r="1.2" />
+            </svg>
+          </a>
 
-<!-- G3 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g3.JPG" alt="Student Activity" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Student Activity</span>
-  </div>
-</div>
+          <a
+            href="index.html#apply-now"
+            class="bg-gradient-to-r from-secondary to-primary text-white text-sm px-5 py-2.5 rounded-full font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+          >
+            Daftar
+          </a>
+        </div>
 
-<!-- G4 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g4.JPG" alt="English Practice" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">English Practice</span>
-  </div>
-</div>
+        <!-- Hamburger Button (Mobile) -->
+        <button
+          id="hamburgerBtn"
+          class="md:hidden flex flex-col justify-center items-center gap-1.5 w-10 h-10"
+          aria-label="Toggle menu"
+        >
+          <span
+            id="bar1"
+            class="block w-6 h-0.5 bg-orange-500 rounded transition-all duration-300"
+          ></span>
+          <span
+            id="bar2"
+            class="block w-6 h-0.5 bg-orange-500 rounded transition-all duration-300"
+          ></span>
+          <span
+            id="bar3"
+            class="block w-6 h-0.5 bg-orange-500 rounded transition-all duration-300"
+          ></span>
+        </button>
+      </div>
 
-<!-- G5 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g5.jpg" alt="Learning Moment" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Toefl Training</span>
-  </div>
-</div>
+      <!-- Mobile Dropdown Menu -->
+      <div
+        id="mobileMenu"
+        class="md:hidden hidden flex-col bg-white border-t border-orange-100 px-4 py-4 gap-1.5 shadow-lg"
+      >
+        <a
+          href="index.html"
+          class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-slate-700 font-medium hover:bg-orange-50/70 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-4.5 h-4.5 w-[18px] h-[18px]"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+            />
+          </svg>
+          Home
+        </a>
+        <a
+          href="gallery.html"
+          class="flex items-center gap-3 px-3.5 py-3 rounded-xl bg-orange-50 text-orange-600 font-semibold transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-[18px] h-[18px]"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14M4 6h16M4 6a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V8a2 2 0 00-2-2M4 6a2 2 0 012-2h12a2 2 0 012 2"
+            />
+          </svg>
+          Gallery
+        </a>
+        <a
+          href="learning-materials.html"
+          class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-slate-700 font-medium hover:bg-orange-50/70 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-[18px] h-[18px]"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+            />
+          </svg>
+          Learning Materials
+        </a>
+        <a
+          href="information.html"
+          class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-slate-700 font-medium hover:bg-orange-50/70 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-[18px] h-[18px]"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          Information
+        </a>
+        <a
+          href="https://www.instagram.com/arizonainstitute/"
+          target="_blank"
+          class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-orange-500 font-medium hover:bg-orange-50/70 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-[18px] h-[18px]"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 12m-3.5 0a3.5 3.5 0 117 0 3.5 3.5 0 01-7 0M17.5 6.5h.01M4 8a4 4 0 014-4h8a4 4 0 014 4v8a4 4 0 01-4 4H8a4 4 0 01-4-4V8z"
+            />
+          </svg>
+          Instagram
+        </a>
+        <a
+          href="index.html#apply-now"
+          class="bg-gradient-to-r from-secondary to-primary text-white px-4 py-3 rounded-full font-semibold shadow text-center mt-1.5"
+        >
+          Daftar
+        </a>
+      </div>
+    </nav>
 
-<!-- G6 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g6.JPG" alt="Discussion Class" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Teacher training</span>
-  </div>
-</div>
+    <main>
+      <!-- BACK TO HOME -->
+      <div class="max-w-7xl mx-auto px-6 pt-20">
+        <a
+          href="index.html"
+          class="inline-flex items-center gap-1.5 text-sm font-semibold text-orange-500 hover:text-orange-600 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            />
+          </svg>
+          Kembali ke Beranda
+        </a>
+      </div>
+      <!-- HEADER -->
+      <section
+        class="relative bg-gradient-to-b from-orange-50/70 via-white to-white pt-6 pb-14 px-6 overflow-hidden"
+      >
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+          <div
+            class="absolute top-0 -right-20 w-72 h-72 bg-secondary/20 rounded-full blur-3xl"
+          ></div>
+          <div
+            class="absolute bottom-0 -left-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl"
+          ></div>
+        </div>
 
-<!-- G7 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g7.JPG" alt="Group Learning" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Group Learning</span>
-  </div>
-</div>
+        <div class="relative max-w-6xl mx-auto text-center">
+          <div
+            class="mx-auto mb-4 w-14 h-14 flex items-center justify-center rounded-2xl bg-gradient-to-br from-secondary to-primary text-white text-2xl shadow-md"
+          >
+            📸
+          </div>
+          <h1
+            class="text-3xl md:text-5xl font-display font-extrabold text-slate-900"
+          >
+            Gallery <span class="text-orange-500">Activities</span>
+          </h1>
+          <div
+            class="w-20 h-1 bg-orange-500 mx-auto mt-4 mb-5 rounded-full"
+          ></div>
+          <p class="text-sm md:text-base text-gray-500 max-w-md mx-auto">
+            Dokumentasi kegiatan pembelajaran dan suasana kelas di Arizona
+            Institute
+          </p>
 
-<!-- G8 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g8.JPG" alt="Classroom Vibes" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Classroom Vibes</span>
-  </div>
-</div>
+          <!-- FILTER -->
+          <div
+            id="galleryFilter"
+            class="flex flex-wrap justify-center gap-2 mt-8"
+          >
+            <button
+              data-filter="all"
+              class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-orange-500 text-white shadow-sm transition"
+            >
+              Semua
+            </button>
+            <button
+              data-filter="class"
+              class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-600 border border-orange-100 hover:bg-orange-50 transition"
+            >
+              Kegiatan Kelas
+            </button>
+            <button
+              data-filter="achievement"
+              class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-600 border border-orange-100 hover:bg-orange-50 transition"
+            >
+              Prestasi
+            </button>
+            <button
+              data-filter="exhibition"
+              class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-600 border border-orange-100 hover:bg-orange-50 transition"
+            >
+              Pameran
+            </button>
+          </div>
+        </div>
+      </section>
 
-<!-- G9 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g9.JPG" alt="Active Learning" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Active Learning</span>
-  </div>
-</div>
+      <!-- GALLERY -->
+      <section class="pb-28">
+        <div class="max-w-7xl mx-auto px-6">
+          <div
+            id="galleryGrid"
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6"
+          >
+            <!-- kartu galeri dirender otomatis lewat JS di bawah -->
+          </div>
+        </div>
+      </section>
+    </main>
 
-<!-- G10 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g10.JPG" alt="Speaking Practice" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Speaking Practice</span>
-  </div>
-</div>
-
-<!-- G11 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g11.jpg" alt="Class Activity" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Arizona Institute Exhibition</span>
-  </div>
-</div>
-
-<!-- G12 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g12.jpg" alt="Learning Together" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Debate Competition</span>
-  </div>
-</div>
-
-<!-- G13 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g13.jpg" alt="English Class" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Arizona Institute Exhibition</span>
-  </div>
-</div>
-
-<!-- G14 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g14.jpg" alt="Study Session" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Arizona Institute Exhibition</span>
-  </div>
-</div>
-
-<!-- G15 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g15.jpg" alt="Learning Atmosphere" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Learning Atmosphere</span>
-  </div>
-</div>
-
-<!-- G16 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g16.jpg" alt="Interactive Class" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Interactive Class</span>
-  </div>
-</div>
-
-<!-- G17 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g17.jpg" alt="Group Discussion" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Group Discussion</span>
-  </div>
-</div>
-
-<!-- G18 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g18.JPG" alt="Study Activity" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Study Activity</span>
-  </div>
-</div>
-
-<!-- G19 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g19.jpg" alt="Learning Process" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Debate Competition</span>
-  </div>
-</div>
-
-<!-- G20 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g20.jpg" alt="Class Interaction" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Class Interaction</span>
-  </div>
-</div>
-
-<!-- G21 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g21.JPG" alt="English Learning" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">English Learning</span>
-  </div>
-</div>
-
-<!-- G22 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g22.JPG" alt="Study Environment" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Study Environment</span>
-  </div>
-</div>
-
-<!-- G23 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g23.JPG" alt="Learning Session" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Learning Session</span>
-  </div>
-</div>
-
-<!-- G24 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g24.JPG" alt="Class Experience" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Class Experience</span>
-  </div>
-</div>
-
-<!-- G25 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g25.JPG" alt="Learning Culture" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Learning Culture</span>
-  </div>
-</div>
-
-<!-- G26 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g26.JPG" alt="Student Engagement" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Student Engagement</span>
-  </div>
-</div>
-
-<!-- G27 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g27.JPG" alt="Class Dynamics" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Class Dynamics</span>
-  </div>
-</div>
-
-<!-- G28 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g28.JPG" alt="Learning Activity" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Learning Activity</span>
-  </div>
-</div>
-
-<!-- G29 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g29.JPG" alt="English Program" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">English Program</span>
-  </div>
-</div>
-
-<!-- G30 -->
-<div class="group relative rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-125 hover:z-50 hover:shadow-2xl cursor-pointer">
-  <img src="assets/img/gallery/g30.JPG" alt="Arizona Institute" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <span class="text-white text-sm font-semibold">Arizona Institute</span>
-  </div>
-</div>
-
+    <!-- LIGHTBOX -->
+    <div
+      id="lightbox"
+      class="fixed inset-0 z-[60] hidden items-center justify-center bg-black/80 backdrop-blur-sm px-6"
+    >
+      <button
+        id="lightboxClose"
+        aria-label="Tutup"
+        class="absolute top-5 right-5 text-white/80 hover:text-white transition"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-8 h-8"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+      <div class="max-w-3xl w-full">
+        <img
+          id="lightboxImg"
+          src=""
+          alt=""
+          class="w-full max-h-[75vh] object-contain rounded-2xl shadow-2xl"
+        />
+        <p
+          id="lightboxCaption"
+          class="text-center text-white/90 text-sm mt-4 font-medium"
+        ></p>
+      </div>
     </div>
-  </div>
-</section>
 
-</body>
+    <!-- ===== FOOTER (sama dengan index.html) ===== -->
+    <footer class="bg-slate-900 text-slate-300 py-10">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-3 items-center gap-4"
+      >
+        <div class="flex items-center gap-2 justify-center sm:justify-start">
+          <img
+            src="assets/img/logo.png"
+            class="w-7 h-7"
+            alt="Arizona Institute Logo"
+          />
+          <span class="font-display font-bold text-white"
+            >Arizona Institute</span
+          >
+        </div>
+
+        <p class="text-sm text-slate-400 text-center justify-self-center">
+          &copy; <span id="year"></span> Arizona Institute. All rights reserved.
+        </p>
+
+        <a
+          href="https://www.instagram.com/arizonainstitute/"
+          target="_blank"
+          aria-label="Instagram"
+          class="text-orange-400 hover:text-orange-300 transition justify-self-center sm:justify-self-end"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5z"
+            />
+            <path
+              d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5A3.5 3.5 0 1112 15a3.5 3.5 0 010-7z"
+            />
+            <circle cx="17.5" cy="6.5" r="1.2" />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Data galeri — tinggal tambah/ubah item di sini, tidak perlu duplikasi HTML manual
+      const galleryItems = [
+        {
+          src: "assets/img/gallery/kegiatankelas (1).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (2).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (3).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (4).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (5).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (6).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (7).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (8).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (9).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (10).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (11).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (12).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (13).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (14).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (15).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (16).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (17).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (18).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (19).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (20).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (21).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (22).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (23).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (24).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (25).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (26).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (27).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (28).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (29).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (30).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (31).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (32).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (33).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (34).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (35).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (36).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (37).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (38).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (39).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (40).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/kegiatankelas (41).JPG",
+          label: "Kegiatan Kelas",
+          category: "class",
+        },
+        {
+          src: "assets/img/gallery/pameran 1.JPG",
+          label: "Pameran",
+          category: "exhibition",
+        },
+        {
+          src: "assets/img/gallery/pameran 2.JPG",
+          label: "Pameran",
+          category: "exhibition",
+        },
+        {
+          src: "assets/img/gallery/pameran 3.JPG",
+          label: "Pameran",
+          category: "exhibition",
+        },
+        {
+          src: "assets/img/gallery/pameran 4.JPG",
+          label: "Pameran",
+          category: "exhibition",
+        },
+        {
+          src: "assets/img/gallery/pameran 5.JPG",
+          label: "Pameran",
+          category: "exhibition",
+        },
+        {
+          src: "assets/img/gallery/pameran 6.JPG",
+          label: "Pameran",
+          category: "exhibition",
+        },
+        {
+          src: "assets/img/gallery/pameran 7.JPG",
+          label: "Pameran",
+          category: "exhibition",
+        },
+        {
+          src: "assets/img/gallery/prestasi (1).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (8).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (10).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (11).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (15).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (29).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (32).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (35).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (36).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (40).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (44).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (45).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (46).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (47).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (48).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (49).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (50).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (51).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (52).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (53).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (54).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (55).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (56).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (57).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (58).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (59).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (60).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (61).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (62).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (63).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (64).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (65).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (66).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+        {
+          src: "assets/img/gallery/prestasi (67).JPG",
+          label: "Prestasi",
+          category: "achievement",
+        },
+      ];
+
+      const grid = document.getElementById("galleryGrid");
+
+      function renderGallery(filter) {
+        grid.innerHTML = "";
+        const items =
+          filter === "all"
+            ? galleryItems
+            : galleryItems.filter((item) => item.category === filter);
+
+        items.forEach((item) => {
+          const card = document.createElement("div");
+          card.className =
+            "group relative aspect-square rounded-2xl bg-white shadow-md overflow-hidden transition-all duration-300 ease-out hover:scale-105 hover:shadow-2xl cursor-pointer";
+          card.setAttribute("data-src", item.src);
+          card.setAttribute("data-label", item.label);
+
+          card.innerHTML = `
+            <img src="${item.src}" alt="${item.label}" loading="lazy" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center p-2 text-center">
+              <span class="text-white text-xs sm:text-sm font-semibold">${item.label}</span>
+            </div>
+          `;
+
+          card.addEventListener("click", () =>
+            openLightbox(item.src, item.label),
+          );
+
+          grid.appendChild(card);
+        });
+      }
+
+      renderGallery("all");
+
+      // FILTER BUTTONS
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      filterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          filterButtons.forEach((b) =>
+            b.classList.remove("bg-orange-500", "text-white", "shadow-sm"),
+          );
+          filterButtons.forEach((b) =>
+            b.classList.add(
+              "bg-white",
+              "text-slate-600",
+              "border",
+              "border-orange-100",
+            ),
+          );
+          btn.classList.remove(
+            "bg-white",
+            "text-slate-600",
+            "border",
+            "border-orange-100",
+          );
+          btn.classList.add("bg-orange-500", "text-white", "shadow-sm");
+
+          renderGallery(btn.getAttribute("data-filter"));
+        });
+      });
+
+      // LIGHTBOX
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightboxImg");
+      const lightboxCaption = document.getElementById("lightboxCaption");
+      const lightboxClose = document.getElementById("lightboxClose");
+
+      function openLightbox(src, label) {
+        lightboxImg.src = src;
+        lightboxImg.alt = label;
+        lightboxCaption.textContent = label;
+        lightbox.classList.remove("hidden");
+        lightbox.classList.add("flex");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeLightbox() {
+        lightbox.classList.add("hidden");
+        lightbox.classList.remove("flex");
+        document.body.style.overflow = "";
+      }
+
+      lightboxClose.addEventListener("click", closeLightbox);
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeLightbox();
+      });
+    </script>
+  </body>
 </html>
