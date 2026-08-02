@@ -6,10 +6,11 @@ Landing page untuk lembaga kursus Bahasa Inggris fiktif "Arizona Institute", dib
 
 ## Tentang Project
 
-Website ini terdiri dari 3 halaman:
+Website ini terdiri dari 4 halaman:
 
-- **Home** (`index.html`) — hero section, statistik, about us, fitur unggulan, program kursus, dan form pendaftaran
-- **Gallery** (`gallery.html`) — galeri dokumentasi kegiatan, dirender otomatis dari data array lewat JavaScript
+- **Home** (`index.html`) — hero section, statistik, about us, fitur unggulan, program kursus, form pendaftaran, dan section lokasi dengan peta Google Maps
+- **Gallery** (`gallery.html`) — galeri dokumentasi kegiatan dengan filter kategori (Semua, Kegiatan Kelas, Prestasi, Pameran), dirender otomatis dari data array lewat JavaScript, dilengkapi lightbox
+- **Learning Materials** (`learning-materials.html`) — referensi buku/materi pembelajaran yang dipakai di kelas, dikelompokkan per kategori (Hospitality & Business, Medical, Engineering & Technical, Public Service, TOEFL/TOEIC Preparation, General English, dll)
 - **Information** (`information.html`) — detail program, syarat pendaftaran, dan jadwal kelas
 
 ## Tech Stack
@@ -24,38 +25,9 @@ Website ini terdiri dari 3 halaman:
 
 - ✅ Fully responsive (mobile, tablet, desktop)
 - ✅ Hero image slider otomatis
-- ✅ Navbar dengan menu mobile (hamburger)
-- ✅ Galeri foto dengan hover overlay, di-render dari data JS (bukan HTML manual berulang)
+- ✅ Navbar model pill/tab dengan active-state indicator, konsisten di semua halaman (desktop & mobile)
+- ✅ Galeri foto dengan filter kategori, hover overlay, dan lightbox — di-render dari data JS (bukan HTML manual berulang)
+- ✅ Halaman Learning Materials yang mengelompokkan puluhan materi ajar ke dalam kategori yang mudah ditelusuri
 - ✅ Form pendaftaran dengan validasi dasar & aksesibilitas (label untuk screen reader)
 - ✅ Tabel syarat pendaftaran & jadwal kelas yang scrollable di layar kecil
-
-## Struktur Folder
-
-```
-├── index.html
-├── gallery.html
-├── information.html
-├── css/
-│   ├── base.css
-│   ├── navbar.css
-│   ├── gallery.css
-│   ├── form.css
-│   └── responsive.css
-├── js/
-│   ├── navbar.js
-│   ├── hero-slider.js
-│   └── apply-form.js
-└── assets/
-    └── img/
-```
-
-## Yang Dipelajari
-
-- Debugging konflik CSS (`!important` yang bikin style ke-override)
-- Refactor kode HTML berulang jadi data-driven rendering (galeri)
-- Menjaga konsistensi desain antar banyak halaman (navbar & footer shared)
-- Dasar-dasar aksesibilitas web (label form, alt text, scope pada tabel)
-
-## Catatan
-
-Project ini dibuat untuk tujuan pembelajaran/portofolio. Data (nama lembaga, alumni, dsb) bersifat contoh.
+- ✅ Section lokasi dengan alamat, link WhatsApp, dan peta Google Maps ter-embed
